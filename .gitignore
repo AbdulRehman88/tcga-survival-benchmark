@@ -12,3 +12,5 @@ data/interim/
 .DS_Store
 Thumbs.db
 data/
+*.BACKUP_*
+inspect_tcga_artifacts_for_external_validation.py

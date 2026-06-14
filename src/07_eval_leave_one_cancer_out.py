@@ -167,7 +167,7 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
 def build_feature_lists(df_train: pd.DataFrame) -> tuple[list[str], list[str], list[str]]:
     core_numeric = [
         "age_years_raw",
-        "received_pharmaceutical_treatment_raw",
+        # "received_pharmaceutical_treatment_raw",  # excluded from primary feature sets
         "biospecimen_n_sample_slots_non_null",
         "biospecimen_n_ffpe_true",
         "omics_present",
@@ -191,6 +191,7 @@ def build_feature_lists(df_train: pd.DataFrame) -> tuple[list[str], list[str], l
     meta_exclude = {
         "patient_id",
         "case_id",
+        "received_pharmaceutical_treatment_raw",
         "event",
         "time_to_event_days_raw",
         "days_to_death_raw",
@@ -315,7 +316,7 @@ def select_feature_names(feature_names: list[str], prefixes: list[str]) -> list[
 def build_feature_sets(feature_names: list[str]) -> dict[str, list[str]]:
     clinical_prefixes = [
         "age_years_raw",
-        "received_pharmaceutical_treatment_raw",
+        # "received_pharmaceutical_treatment_raw",  # excluded from primary feature sets
         "cancer_type_",
         "sex_clean_",
         "race_clean_",
