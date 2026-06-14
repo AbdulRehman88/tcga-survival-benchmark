@@ -9,7 +9,7 @@ authors:
   given-names: "Abdul"
 - family-names: "Kim"
   given-names: "Chanwoo"
-doi: "10.5281/zenodo.20680642"
+doi: "10.5281/zenodo.20689634"
 repository-code: "https://github.com/AbdulRehman88/tcga-survival-benchmark"
 license: MIT
-version: "v1.0.1-jbhi-submission"
+version: "v1.1.0-external-validation"
